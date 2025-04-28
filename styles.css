@@ -4,14 +4,23 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f09d77;
+    /* background-color: #f09d77; */
+    height: 100vh;
+    background: linear-gradient(185deg, #f7ba22, #f09d77);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .main{
-    margin-top: 25vmin;
+    /* margin-top: 1vmin; */
+    /* display: flex; */
     border: 2px solid black;
     width: 40vw;
     height: 40vh;
+    border-radius: 5vmin;
+}
+.intro{
+    margin-top: 15vmin;
+  text-align: center;
+  
 }
