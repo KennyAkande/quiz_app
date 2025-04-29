@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="JS/jquery-3.7.1.js"></script>
-    <script src="JS/script.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="JS/jquery-3.7.1.js"></script>
+  <script src="JS/script.js"></script>
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="main">
-      <h2 class="intro">Are You Ready To Play 😆</h2>
-      <button class="clicky">yes</button>
-    </div>
-    <!-- display part -->
-    <div class="display1">
-      <h2>What is the capital of Togo?</h2>
-      
-      <p id="timer">Time left: <span id="time">5</span></p>
+  <div class="main">
+    <h2 class="intro">Are You Ready To Play 😆</h2>
+    <button class="clicky">yes</button>
+  </div>
+  <!-- display part -->
+  <div class="display display1">
+    <h2>What is the capital of Togo?</h2>
 
-      <button class="option" onclick="checkAnswer(this)">Lagos</button>
-      <button class="option" onclick="checkAnswer(this)">Accra</button>
-      <button class="option" onclick="checkAnswer(this)">Lomé</button>
-      <button class="option" onclick="checkAnswer(this)">Abuja</button>
-  
-      <div class="display1">
-        <h2>Which freezes faster: hot water or cold water?</h2>
-        
-        <p id="timer">Time left: <span id="time">5</span></p>
-  
-        <button class="option" onclick="checkAnswer(this)">Lagos</button>
-        <button class="option" onclick="checkAnswer(this)">Accra</button>
-        <button class="option" onclick="checkAnswer(this)">Lomé</button>
-        <button class="option" onclick="checkAnswer(this)">Abuja</button>
-    
-        
-        <div id="result"></div>
-      </div>
-      <div class="display1">
-        <h2> What is the only planet in our solar system to rotate clockwise on its axis?</h2>
-        
-        <p id="timer">Time left: <span id="time">5</span></p>
-  
-        <button class="option" onclick="checkAnswer(this)">Mars</button>
-        <button class="option" onclick="checkAnswer(this)">Venus</button>
-        <button class="option" onclick="checkAnswer(this)">Jupiter</button>
-        <button class="option" onclick="checkAnswer(this)">Earth</button>
-    
-        
-        <div id="result"></div>
-      </div>
-      <div class="display1">
-        <h2>What is the capital of Togo?</h2>
-        
-        <p id="timer">Time left: <span id="time">5</span></p>
-  
-        <button class="option" onclick="checkAnswer(this)">Lagos</button>
-        <button class="option" onclick="checkAnswer(this)">Accra</button>
-        <button class="option" onclick="checkAnswer(this)">Lomé</button>
-        <button class="option" onclick="checkAnswer(this)">Abuja</button>
-    
-        
-        <div id="result"></div>
-      </div>
+    <p id="timer">Time left: <span class="time">10</span></p>
 
-      <div id="result"></div>
-    </div>
+    <button class="option" onclick="checkAnswer(this)">Lagos</button>
+    <button class="option" onclick="checkAnswer(this)">Accra</button>
+    <button class="option" onclick="checkAnswer(this)">Lomé</button>
+    <button class="option" onclick="checkAnswer(this)">Abuja</button>
+
+  </div>
+  <div class="display display2">
+    <h2>Which freezes faster: hot water or cold water?</h2>
+
+    <p id="timer">Time left: <span class="time">10</span></p>
+
+    <button class="option" onclick="checkAnswer(this)">Hot</button>
+    <button class="option" onclick="checkAnswer(this)">Cold</button>
+    <button class="option" onclick="checkAnswer(this)">Both of them</button>
+    <button class="option" onclick="checkAnswer(this)">I don't know</button>
+
+    <div id="result"></div>
+  </div>
+
+  <div class="display  display3">
+    <h2> What is the only planet in our solar system to rotate clockwise on its axis?</h2>
+
+    <p id="timer">Time left: <span class="time">10</span></p>
+
+    <button class="option" onclick="checkAnswer(this)">Mars</button>
+    <button class="option" onclick="checkAnswer(this)">Venus</button>
+    <button class="option" onclick="checkAnswer(this)">Jupiter</button>
+    <button class="option" onclick="checkAnswer(this)">Earth</button>
+
+    <div id="result"></div>
 </body>
+
 </html>

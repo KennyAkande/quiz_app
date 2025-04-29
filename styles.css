@@ -40,12 +40,14 @@ body {
     font-size: 4vmin;
     transition: transform 0.3s;
 }
+
 .clicky:hover {
     transform: scale(1.1);
     background-color: #f7ba22;
 }
+
 /* display part */
-.display1 {
+.display{
     display: none;
     background: white;
     padding: 10vmin;
@@ -54,36 +56,43 @@ body {
     width: 35vw;
     /* height: auto; */
     text-align: center;
-  }
+}
 
-  h2 {
+h2 {
     margin-bottom: 3vmin;
     color: #333;
     font-size: 4.5vmin;
-  }
+}
 
-  .option {
+.option {
     color: #333;
     margin: 1.5vmin;
     padding: 1vmin;
     width: 80%;
     font-size: 3vmin;
     cursor: pointer;
-    background-color: #f09d77 ;
+    background-color: #f09d77;
     border: none;
     border-radius: 1vmin;
     /* transition: all 0.2s ease; */
-  }
+}
 
-  .option:hover {
+.option:hover {
     background-color: #f7ba22;
-  }
+}
 
-  #result {
+#result {
     margin-top: 2vmin;
     font-weight: bold;
     font-size: 3vmin;
-  }
-#timer{
-  font-size: 4.5vmin;
- }
+}
+
+#timer {
+    font-size: 4.5vmin;
+}
+
+.display2,
+.display3,
+.display4 {
+    display: none;
+}
