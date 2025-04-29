@@ -40,7 +40,6 @@ body {
     font-size: 4vmin;
     transition: transform 0.3s;
 }
-
 .clicky:hover {
     transform: scale(1.1);
     background-color: #f7ba22;
