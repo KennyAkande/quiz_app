@@ -3,6 +3,7 @@ $(document).ready(function () {
     let timeleft = 11;
     let timer;
     let currentQuestion = 1;
+    let score = 0;
 
 function startTimer() {
     timeleft = 10;
@@ -22,6 +23,7 @@ function startTimer() {
     }, 1000);
 }
    
+        
 
     $(".clicky").click(function () {
         $(".main").fadeOut(300, function () {
@@ -29,4 +31,7 @@ function startTimer() {
             startTimer();
         });
     });
+    $(".option").click(function () {
+        clearInterval(timer);
+    })
 });

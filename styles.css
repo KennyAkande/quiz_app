@@ -96,3 +96,16 @@ h2 {
 .display4 {
     display: none;
 }
+.resultDisplay {
+    margin: auto;
+    margin-top: 20vmin;
+    height: 50vh;
+    border: 2px solid black;
+    display: none;  
+    background: white;
+    padding: 10vmin;
+    border-radius: 5vmin;
+    width: 35vw;
+    /* height: auto; */
+    text-align: center;
+  }
