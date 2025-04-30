@@ -23,12 +23,15 @@ $(document).ready(function () {
         }, 1000);
     }
     function showResult() {
-  if (score > 3) {
-    $(".resultDisplay").text(score)
-  } else {
-    
-  }
+        if (score > 3) {
+            $(".resultDisplay").fadeIn();
+            $(".resultDisplay .score").text(score);
+        } else {
+            $(".resultDisplayLoser").fadeIn();
+            $(".resultDisplayLoser .score").text(score);
+        }
     }
+
 
     $(".clicky").click(function () {
         $(".main").fadeOut(300, function () {

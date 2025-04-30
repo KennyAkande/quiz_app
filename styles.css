@@ -135,3 +135,6 @@ h2 {
     /* height: auto; */
     text-align: center;
 }
+.resultDisplay, .resultDisplayLoser {
+    display: none;
+  }
