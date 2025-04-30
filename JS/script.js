@@ -4,11 +4,11 @@ $(document).ready(function () {
     let currentQuestion = 1;
     let score = 0;
     function startTimer() {
-        timeleft = 10;
         clearInterval(timer)
+        timeleft = 10;
         timer = setInterval(function () {
             timeleft--;
-            $(".time").text(timeleft);
+            $(".display" + currentQuestion + " .time").text(timeleft);
 
             if (timeleft <= 0) {
                 clearInterval(timer);
