@@ -1,14 +1,11 @@
 $(document).ready(function () {
-
     let timeleft = 11;
     let timer;
     let currentQuestion = 1;
     let score = 0;
-
     function startTimer() {
         timeleft = 10;
         clearInterval(timer)
-
         timer = setInterval(function () {
             timeleft--;
             $(".time").text(timeleft);
@@ -23,7 +20,7 @@ $(document).ready(function () {
         }, 1000);
     }
     function showResult() {
-        if (score > 3) {
+        if (score > 5) {
             $(".resultDisplay").fadeIn();
             $(".resultDisplay .score").text(score);
         } else {
@@ -31,8 +28,6 @@ $(document).ready(function () {
             $(".resultDisplayLoser .score").text(score);
         }
     }
-
-
     $(".clicky").click(function () {
         $(".main").fadeOut(300, function () {
             $(".display1").fadeIn(300);
@@ -40,11 +35,9 @@ $(document).ready(function () {
         });
     });
     $(".option").click(function () {
-
         if ($(this).hasClass("correct")) {
             score++;
         }
-
         $(".display" + currentQuestion).fadeOut(300, function () {
             currentQuestion++;
 
@@ -54,9 +47,7 @@ $(document).ready(function () {
             } else {
                 showResult();
             }
-
         });
-
         clearInterval(timer);
     })
 });
