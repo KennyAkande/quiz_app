@@ -122,3 +122,16 @@ h2 {
     margin-right: 40vmin;
     font-weight: bolder;
 }
+.resultDisplayLoser{
+    margin: auto;
+    margin-top: 20vmin;
+    height: 50vh;
+    border: 3px solid #e67e22;
+    /* display: none;  */
+    background: white;
+    /* padding: 10vmin; */
+    border-radius: 5vmin;
+    width: 35vw;
+    /* height: auto; */
+    text-align: center;
+}
